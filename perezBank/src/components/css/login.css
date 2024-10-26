@@ -1,0 +1,173 @@
+.containerLogin{
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../../assets/fondoLogin.jpg');
+    background-size:cover;
+}
+
+.loginHeader{
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+.containerHeaderButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.loginScreen{
+    height: calc(100vh - 100px);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.loginPresentation{
+    text-align: start;
+}
+
+.loginPresentation h1{
+    font-size: 7rem;
+    color: var(--TextColor2);
+    margin:0px;
+    max-width: 800px;
+    width: fit-content;
+}
+
+.loginPresentation h3{
+    font-size: 2.5rem;
+    color: var(--TextColor2);
+    margin:0px;
+    margin-left: 3rem;
+    max-width: 800px;
+}
+
+.loginPresentation h1 span, .loginPresentation h3 span{
+    color: var(--Corp1);
+}
+
+.headerButton{
+    all: unset;
+    padding: .5rem .8rem;
+    transition: .5s;
+    border-radius: 5rem;
+    color: var(--TextColor2);
+    cursor: pointer;
+}
+
+.headerButton:hover{
+    background-color: var(--Corp1);
+}
+
+.activateBg{
+    background-color: var(--Corp4);
+}
+
+
+.creditCardContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    height: 100%;
+}
+
+.creditCard{
+    height: fit-content;
+    width: fit-content;
+    width: 100%;
+}
+
+.contenedorForm{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: .7rem 2rem;
+    border-radius: .6rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.contenedorForm.fade-in {
+    opacity: 1;
+}
+
+.contenedorInput{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width:calc(50% - .5rem);
+}
+
+.button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--Corp4);
+    cursor: pointer;
+    color: var(--TextColor2);
+    transition: 0.2s;
+}
+  
+.button:hover {
+    box-shadow: 0px 0px 17px -4px var(--Corp1);
+    border-color: var(--Corp1);
+    background-color: var(--Corp4);
+}
+  
+.button:active {
+    box-shadow: 0px 0px 17px -7px var(--Corp1);
+    border-color: var(--Corp1);
+    transform: scale(0.95);
+}
+  
+
+.registerButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.input {
+    border: 2px solid transparent;
+    width: 100%;
+    height: 2.5em;
+    padding: 1.2rem 0.8em;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+  
+.input:hover,
+.input:focus {
+    border: 2px solid var(--Corp1);
+    box-shadow: 0px 0px 10px 1px var(--Corp1);
+    background-color: white;
+}

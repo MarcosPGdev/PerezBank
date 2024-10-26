@@ -1,0 +1,110 @@
+.bankAccounts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.createAccButton{
+    all: unset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--Corp4);
+    padding: .4rem;
+    border-radius: .4rem;
+    color: var(--TextColor2);
+    transition: .5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createAccButton:hover{
+    background-color: var(--Corp1);
+}
+
+.bankAccounts p{
+    margin: 0px;
+}
+
+.balance{
+    color: var(--Corp1);
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.cardText{
+    color: var(--TextColor2);
+    font-size: 1.2rem;
+}
+
+.cardBankName{
+    width: 100%;
+    text-align: left;
+    margin: 0px;
+}
+
+.accountCard{
+    background: radial-gradient(
+        circle at top left, var(--Corp1), transparent 50%
+    ),
+    radial-gradient(
+        circle at top right, var(--Corp5), transparent 80%
+    ),
+    radial-gradient(
+        circle at bottom right, var(--Corp1), transparent 80%
+    ),
+    radial-gradient(
+        circle at bottom left, var(--Corp5), transparent 80%
+    );
+    padding: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    height: 200px;
+    max-width: 375px;
+}
+
+.topAccontCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.midAccountCard{
+    text-align: left;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.midAccountCard img{
+    height: 40%;
+}
+
+
+.bottomAccountCard{
+    text-align: left;
+    height: 20%;
+}
+
+.slick-slider{
+    width: 85%;
+}
+
+.slick-track{
+    display: flex !important;
+    gap: 10px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: var(--TextColor) !important;
+}

@@ -1,0 +1,75 @@
+:root {
+  --Corp1: #51C26F;
+  --Corp2: #f2f3f4;
+  --Corp3: #ffffff;
+  --Corp4: #000000;
+  --Corp5: #F2E901;
+  --TextColor: #000000;
+  --TextColor2: white;
+  font-family: 'Euclid';
+}
+
+body{
+  background-color: var(--Corp2);
+  margin: 0px;
+}
+
+@font-face {
+    font-family: 'Euclid';
+    src: url('src/fonts/Euclid Circular A Medium.ttf') format('truetype');
+}
+
+.pantalla{
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-header{
+    width:100%;
+    height:60px;
+    background: radial-gradient(
+        circle at top left, var(--Corp1), transparent 50%
+    ),
+    radial-gradient(
+        circle at top right, var(--Corp5), transparent 80%
+    ),
+    radial-gradient(
+        circle at bottom right, var(--Corp1), transparent 80%
+    ),
+    radial-gradient(
+        circle at bottom left, var(--Corp5), transparent 80%
+    );
+    box-shadow: 0px 0px 8px;
+    box-sizing: border-box;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.screen-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.unsetButton{
+  all: unset;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.unsetButton:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.title-header{
+  color: var(--Corp3);
+}

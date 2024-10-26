@@ -1,0 +1,56 @@
+.asideTool{
+    height: calc(100vh - 60px);
+    width: 60px;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px -5px;
+}
+
+.asideTool p{
+    margin: 0px;
+}
+
+@media (max-width: 850px) {
+    .asideTool{
+        width: 100px;
+    }
+
+    .asideTool p{
+        display:none;
+
+    }
+
+    .toolList li {
+        padding: 0.8rem 0.8rem !important;
+    }
+}
+
+.toolList{
+    color: var(--TextColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    gap: .8rem;
+    width: 100%;
+    align-items: center;
+}
+
+.toolList li{
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background: white;
+}
+
+.toolList li:hover{
+    background: linear-gradient(45deg, var(--Corp1), var(--Corp5));
+    color: var(--Corp3);
+    font-weight: 800;
+}
