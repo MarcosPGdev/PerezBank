@@ -35,10 +35,10 @@ function RegisterForm (){
       const dniRegex = /^\d{8}[A-Za-z]$/;
       if (!dniRegex.test(formData.dni)) {
         toast.error("El DNI debe contener 8 números seguidos de una letra.");
-        return; // No continúa si el DNI no es válido
+        return;
       }
       
-      axios.post('http://localhost:5000/register', formData)
+      axios.post('http://localhost:5000/api/users/registerUser', formData)
       .then(response => {
         console.log('Registro exitoso:', response.data);
         toast.success('Usuario registrado con éxito');

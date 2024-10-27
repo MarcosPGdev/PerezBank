@@ -37,7 +37,7 @@ function TransactionTools({ accounts, currentSlideIndex, controlData, setControl
 
     const doTransaction = () => {
         console.log('Datos de la transacción:', transacctionForm);
-        axios.post('http://localhost:5000/transactions', transacctionForm)
+        axios.post('http://localhost:5000/api/transactions/transactions', transacctionForm)
         .then(response => {
             toast.success(response.data.message);
             console.log(response.data);

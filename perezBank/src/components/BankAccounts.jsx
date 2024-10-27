@@ -18,7 +18,7 @@ function BankAccounts({accounts, currentSlideIndex, setCurrentSlideIndex, contro
 
     const createAccount = (accounts) => {
         console.log(accounts)
-        axios.post('http://localhost:5000/createAccount',{UserId:accounts.userAccounts[currentSlideIndex].account.UserId})
+        axios.post('http://localhost:5000/api/accounts/createAccount',{UserId:accounts.userAccounts[currentSlideIndex].account.UserId})
         .then(response => {
             setControlData(controlData*-1);
             toast.success(response.data.message);

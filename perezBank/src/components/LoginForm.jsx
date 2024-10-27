@@ -26,7 +26,7 @@ function LoginForm({onLoginSuccess}){
         e.preventDefault();
         console.log(formData);
         
-        axios.post('http://localhost:5000/login', formData)
+        axios.post('http://localhost:5000/api/users/loginUser', formData)
         .then(response => {
               console.log('Registro exitoso:', response.data);
               localStorage.setItem('token', response.data.token);

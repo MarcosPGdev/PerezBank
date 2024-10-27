@@ -15,7 +15,7 @@ function Dashboard(){
     const [controlData, setControlData] = useState(1);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     useEffect(() => {
-        axios.get('http://localhost:5000/get_accounts',{params:{token:token}})
+        axios.get('http://localhost:5000/api/accounts/get_accounts',{params:{token:token}})
         .then(response => {
             console.log(response.data)
             setAccounts(response.data);
